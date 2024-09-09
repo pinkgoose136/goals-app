@@ -1,0 +1,215 @@
+/* styles/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .frequency-options {
+    margin-top: 15px;
+  }
+  
+  .days-selection {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .save-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  /* Стили для радио-кнопок и чекбоксов */
+.frequency-options label,
+.days-selection label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.frequency-options input[type="radio"],
+.days-selection input[type="checkbox"] {
+  margin-right: 8px;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #777;
+  border-radius: 50%;
+  background-color: #333;
+  position: relative;
+}
+
+.frequency-options input[type="radio"]:checked::before,
+.days-selection input[type="checkbox"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+}
+
+.days-selection input[type="checkbox"] {
+  border-radius: 4px;
+}
+
+.days-selection input[type="checkbox"]:checked::before {
+  width: 12px;
+  height: 12px;
+}
+
+label:hover input[type="radio"],
+label:hover input[type="checkbox"] {
+  border-color: #4caf50;
+}
+
+/* Стили для select */
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  /* Стили для дней недели */
+  .days-selection {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #777;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+  }
+  
+  .days-selection label {
+    margin: 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  /* Стили для input */
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  /* Стили для кнопок */
+  .button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #45a049;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d32f2f;
+  }
+  
+
+  /* Стили для ошибок */
+.error {
+  border-color: #f44336;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Оформление для инпутов с ошибками */
+.input-field.error {
+  border-color: #f44336;
+}

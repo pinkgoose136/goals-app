@@ -1,0 +1,31 @@
+/* Footer styles */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #2b2b2b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-button {
+    background: none;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.2s;
+  }
+  
+  .footer-button:hover {
+    color: #4caf50;
+  }
+  
+  .footer-button.selected {
+    color: #4caf50;
+    font-weight: bold;
+  }
+
+  
+  
