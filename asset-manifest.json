@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/goals-app/static/css/main.7210d83a.css",
+    "main.js": "/goals-app/static/js/main.96729f5b.js",
+    "static/js/453.478c1d14.chunk.js": "/goals-app/static/js/453.478c1d14.chunk.js",
+    "index.html": "/goals-app/index.html",
+    "main.7210d83a.css.map": "/goals-app/static/css/main.7210d83a.css.map",
+    "main.96729f5b.js.map": "/goals-app/static/js/main.96729f5b.js.map",
+    "453.478c1d14.chunk.js.map": "/goals-app/static/js/453.478c1d14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7210d83a.css",
+    "static/js/main.96729f5b.js"
+  ]
+}
